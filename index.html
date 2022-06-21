@@ -1,16 +1,787 @@
-        <html>
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0" />
-        <title>Crio Feed</title>
-        <meta name="description" content="Crio Feed Website" />
-        <link rel="stylesheet" href="resources/css/index.css">
-        </head>
+<html>
+     <head>   
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0" />
+          <title>Crio News Feed</title>
+          <meta name="description" content="Crio Feed Website" />
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+               integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          <link rel="stylesheet" href="resources/css/index.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Kanit:wght@300&family=Overpass:ital,wght@1,100&family=Roboto+Mono:wght@300&family=Rubik&family=Varela+Round&display=swap"
+               rel="stylesheet">
 
-        <body>
+     </head>
+ 
+     <body> 
+<!----------Navbar---------->
+          <header>
+               <nav class="navbar navbar-dark bg-dark mb-2 mt-2">
+                    <div class="container-fluid d-flex jutify-content-center text-start mt-3">
+                    <div class="col-12 col-sm-4 col-md-6 col-lg-8">
+                         <nav class="navbar-brand mb-1">
+                              <div class="ovalDiv mb-2"></div>
+                                   <h2 id="font"><b>News Feed</b></h2>
+                         </nav>
+                    </div>  
+                    </div>
+               </nav>
+          </header>
+          <div class="line1"></div>
 
-        <div class="h1">Write your code in this file</div>
-        <script src="resources/data/magazines.js"></script>
-        <script src="resources/js/index.js"></script>
-        </body>
-        </html>
+<!----------Heading & Subheading---------->
+          <div class="col-12 col-sm-4 col-md-6 col-lg-8">
+               <div class="container-fluid d-flex text-start mt-3">
+                    <h3 id="font1"><b>Today</b></h3>
+               </div>
+               <div class="container-fluid d-flex text-start mt-1">
+                    <h4 id="font1">The insights you need to be updated with..</h4>
+               </div>
+          </div><br>
+
+<!----------Accordian & Carousel---------->
+     <!--points to note: 
+     1. make 3 accordians
+     2. add crousel to each accordian-->
+          <div class="col-12 col-sm-4 col-md-6 col-lg-8">
+               <div class="accordion" id="accordionId">
+                    <div class="accordion-item">
+                         <h2 class="accordion-header" id="heading">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-0"
+                                   aria-expanded="true" aria-controls="collapse-0">
+                                   <b>The Latest on Coronavirus (COVID-19)</b>
+                              </button>
+                         </h2>
+                         <div id="collapse-0" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                              data-bs-parent="#accordionId">
+                              <div class="accordion-body">
+                                   <div id="carouselExampleControls-1" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                             <div class="carousel-item active">
+                                                  <a href="https://www.nbcnews.com/health/health-news/cdc-panel-endorses-covid-vaccines-littlest-kids-rcna34173?cid=sm_npd_nn_tw_ma" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://i0.wp.com/blog.petrieflom.law.harvard.edu/wp-content/uploads/2018/07/shutterstock_542046412-1-e1610387548252.jpg?resize=750%2C410&ssl=1" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading ">
+                                                                 <h4><b>CDC approves Covid vaccines for youngest kids</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Berkeley Lovelace Jr.</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>18/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Can children get a Covid vaccine? The CDC Saturday endorsed Pfizer and Moderna's Covid vaccines for young children. The
+                                                                 wait is finally over. On Saturday, the Centers for Disease Control and Prevention Director Dr. Rochelle Walensky signed
+                                                                 off on Covid vaccines for the youngest Americans. Her …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.foxnews.com/politics/biden-national-security-adviser-jake-sullivan-tests-positive-covid-19" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/03/720/405/AP22072492675175.jpg?ve=1&tl=1"/>
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Biden National Security Adviser Jake Sullivan tests positive for COVID-19</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Andrew Mark Miller</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>18/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 White House National Security Adviser Jake Sullivan has tested positive for COVID-19, the National Security Council
+                                                                 announced on Saturday. "National Security Advisor Jake Sullivan tested positive today for COVID-19," NSC Spokesperson
+                                                                 Adrienne Watson said in a statement. "He is asymptomatic and he …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div> 
+                                             <div class="carousel-item">
+                                                  <a href="https://www.foxnews.com/lifestyle/covid-trivia-game-coronavirus-pandemic" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/06/720/405/Citizen-Outbreak-box-with-cards-6-22.jpeg?ve=1&tl=1"/>
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>New COVID trivia card game captures the madness of the coronavirus pandemic</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Kerry J. Byrne</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>18/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Citizen Outbreak, a new trivia card game, captures the frustrations, curiosities and shared human experiences of the
+                                                                 COVID-19 years — everything from the divisive pronouncements of Dr. Anthony Fauci to the madness of murder hornets. The
+                                                                 card game is the brainchild of two boyhood friends, now in …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://apnews.com/article/college-football-covid-sports-health-education-31ba2d40b3020a2ff1a405d6d6c898ed" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://storage.googleapis.com/afs-prod/media/7f82bfdb3ad94e0081737b919d02915f/1000.jpeg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Title IX: Law ensured balanced cutbacks during pandemic</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Aaron Beard</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Title IX is always on Candice Storey Lee's mind and the Vanderbilt athletics director believes that's how it should be
+                                                                 for any administrator running college programs. “I would hope that's part of our DNA and that it is seen in how we make
+                                                                 decisions on a day-to-day basis,” Lee said. By most accounts, …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.axios.com/2022/06/17/covid-rent-falling-behind" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://images.axios.com/cM6JCOAjERwMRwxiTB1KPMO2jFo=/0x574:5557x3700/1920x1080/2022/06/17/1655504513353.jpg?w=1920" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>COVID disproportionately hurt renters of color, study says</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Shawna Chen</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>18/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 The pandemic hit millions of renters hard — especially people of color, individuals living with children and those
+                                                                 living in the South, according to …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.theguardian.com/us-news/2022/jun/16/us-could-have-saved-338000-lives-covid-universal-healthcare-study-finds" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://i.guim.co.uk/img/media/cdfd76548de588e47c4b2ccdc7286f5003833f92/0_102_7062_4235/master/7062.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=0e2d84eb6a67969263efcd0d80b2b308" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>US could have saved 338,000 lives from Covid with universal healthcare, study finds</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Eric Berger</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>16/6/2020</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 The US could have saved more than 338,000 lives and more than $105bn in healthcare costs in the Covid-19 pandemic with a
+                                                                 universal healthcare system, according to a study. More than 1 million people died in the US from Covid, in part because
+                                                                 the country's “fragmented and inefficient healthcare …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://abcnews.go.com/Health/counties-struggling-vaccinate-residents-covid-19/story?id=85244565" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://s.abcnews.com/images/US/VaxLowestCountyRates_v01_KA_1655326843089_hpEmbed_1x1_992.jpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Why some counties are still struggling to vaccinate residents against COVID-19</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Mary Kekatos and Teddy Grant</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>17/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 CDC data shows 24 counties have vaccinated fewer than 30% of their residents. More than a year and a half since the
+                                                                 first COVID-19 vaccines were …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.npr.org/2022/06/17/1105924312/tour-de-france-covid" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://media.npr.org/assets/img/2022/06/17/ap22065487804785_wide-530551722712bb4a274d787041a6e4ebee3a98bf-s900-c85.webp" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>COVID cases are upending cycling, and the Tour de France starts in 2 weeks</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Bill Chappell</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>17/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Two races that are supposed to be tune-up events for the Tour de France are instead raising worries about COVID-19's
+                                                                 impact on cycling's biggest event, with dozens of riders forced to withdraw because of positive tests. "It's just
+                                                                 crazy," Welsh cyclist Geraint Thomas said at the Tour de Suisse on …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.vice.com/en/article/pkgya7/north-korea-mystery-intestinal-disease-outbreak" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://video-images.vice.com/articles/62848e14e9aa71009d53c0fa/lede/1652854377191-00032ac4te.jpeg?crop=1xw:0.8525xh;0xw,0.0611xh&resize=700:*" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Another Mystery Disease Is Spreading Amid North Korea's COVID Outbreak</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Gavin Butler</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>17/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Some experts have speculated that the outbreak may be cholera or typhoid, which could devastate the country's
+                                                                 malnourished population. North Korean leader Kim Jong Un is sending his own home-prepared medicines to parts of the
+                                                                 country recently afflicted by the outbreak of an unnamed intestinal …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.dw.com/en/global-mental-health-issues-saw-sharp-rise-during-pandemic-who/a-62163813"
+                                                       target="_blank">
+                                                       <div class="card-image">
+                                                            <img
+                                                                 src="https://static.dw.com/image/62163834_303.jpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Global mental health issues saw sharp rise during pandemic: WHO</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Tedros Adhanom Ghebreyesus</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>17/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 The WHO released a report which said that mental illness had spiked across the world due to COVID and related
+                                                                 restrictions. Young people, women, and …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-1" data-bs-slide="prev">
+                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                             <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-1" data-bs-slide="next">
+                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                             <span class="visually-hidden">Next</span>
+                                        </button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header" id="heading">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                                   <b>Sports World (SportStars)</b>
+                              </button>
+                         </h2>
+                         <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                              data-bs-parent="#accordionId">
+                              <div class="accordion-body">
+                                   <div id="carouselExampleControls-2" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                             <div class="carousel-item active">
+                                                  <a href="https://sportstar.thehindu.com/boxing/sanjeet-bicep-surgery-commonwealth-games-birmingham-92kg-santiago-nieva/article38503977.ece" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://media.istockphoto.com/photos/kick-box-sparring-picture-id500752038?k=20&m=500752038&s=612x612&w=0&h=NHHPWqVW7Ojq7XOkovrFWh9v1Tmck2ZEAP6SVk7RIt0=" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Sanjeet full of confidence after bravely overcoming setbac</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Y. B. SARANGI</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 A second bicep surgery may have had its effect on his strong left jab, but the adversity has pushed Asian champion
+                                                                 Sanjeet to sharpen his right punch … 
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://sportstar.thehindu.com/cricket/ind-vs-sa-weather-forecast-bangalore-rain-india-south-africa-5th-t20i/article38503973.ece" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://ss.thgim.com/incoming/article38503972.ece/alternates/FREE_690/rainjpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>India vs South Africa 5th T20I, weather updates: Rain looms large over series-decider in Bangalore</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Team Sportstar</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 The spectre of rain hangs heavy over the fifth T20I between India and South Africa at the M Chinnaswamy Stadium in
+                                                                 Bengaluru on Sunday. With the …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://sportstar.thehindu.com/cricket/ind-vs-sa-5th-t20i-dream11-prediction-india-south-africa-predicted-11-squads-dinesh-karthik/article38503970.ece" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/bcxflixcajtjkaal_1655188646.jpeg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>IND vs SA 5th T20I, Dream11 fantasy team: India vs South Africa predicted XI</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Team Sportstar</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 With the series tied at 2-2, India will lock horns with South Africa in the fifth and final T20I at the M Chinnaswamy
+                                                                 Stadium in Bengaluru on …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://sportstar.thehindu.com/boxing/wbc-continental-flyweight-boxing-nt-lalbiakkima-loses-title/article38503964.ece" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://ss.thgim.com/boxing/article38503963.ece/alternates/FREE_690/boxingjpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Indian boxer Lalbiakkima loses WBC Asian title fight</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>PTI</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Indian boxer NT Lalbiakkima lost to Filipino Jayson Vayson in a 10-round WBC Asian Boxing Council's continental light
+                                                                 flyweight title fight …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://sportstar.thehindu.com/motorsport/f1/canadian-gp-gof1-show-with-mathhew-marsh-canadian-grand-prix-f1-raceday-motorsports-news/article38503569.ece" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://ss.thgim.com/motorsport/motorsport-photos/article38503568.ece/alternates/FREE_690/Bahrain-GP-22jpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Canadian GP: GOF1 Show with Matthew Marsh and commentator Bob Constanduros</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Team Sportstar</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Red Bull Racing's Max Verstappen returned to the pole position while his teammate Sergio Perez crashed out in wet
+                                                                 Montreal ahead of the Canadian …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://sportstar.thehindu.com/cricket/bangladesh-west-indies-test-1-day-3-report-wi-on-verge-of-a-win/article38503952.ece" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://images.indianexpress.com/2022/06/Rishabh-Pant-1.jpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>BAN v WI 1st Test, day3: West Indies on verge of victory, needs 35 to win</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>AP</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Bangladesh went from looking like losing by an innings to beating West Indies on a compelling day three of the first
+                                                                 Test. A brilliant rearguard stand …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://sportstar.thehindu.com/athletics/shelly-ann-fraser-pryce-clocks-1067sec-to-win-paris-diamond-league/article38503944.ece" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://ss.thgim.com/athletics/article38503948.ece/alternates/FREE_690/Shellyjpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Shelly-Ann Fraser-Pryce clocks 10.67sec to win Paris Diamond League</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>REUTERS</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Shelly-Ann Fraser-Pryce matched her season's best of 10.67 seconds to win the 100 metres at the Paris Diamond League
+                                                                 meeting on Saturday. The …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://sportstar.thehindu.com/incoming/canadian-grand-prix-max-verstappen-pole-position-fernando-alonso-close-second/article38503950.ece" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://cdn-1.motorsport.com/static/img/archive/autosport/news/154985_1000523/s8/1000523.jpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <hr4><b>Verstappen on pole in Canada, Alonso on front row</b></hr4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>REUTERS</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Red Bull's Formula One leader Max Verstappen shone in the wet to take pole position for the Canadian Grand Prix on
+                                                                 Saturday as Alpine's evergreen …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://sportstar.thehindu.com/motorsport/f1-fernando-alonso-back-up-front-after-a-decade-behind-max-verstappen/article38503941.ece" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2022/06/18232556/fernando-alonso-celebrate-montreal-qualifying-planetf1.jpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Fernando Alonso back up front after a decade behind</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>REUTERS</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Only four current Formula One drivers were around last time Fernando Alonso started a race on the front row but, a
+                                                                 decade on, the double-world …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://sportstar.thehindu.com/athletics/neeraj-chopra-wins-at-kuortane-games-first-since-tokyo/article38503925.ece" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://ss.thgim.com/incoming/article38503924.ece/alternates/FREE_690/NEERAJ-CHOPRA-LLLLjpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Neeraj Chopra wins at Kuortane Games, first since Tokyo</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Team Sportstar</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>19/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 The Olympic Champion secures his first win since the gold medal finish at Tokyo with a throw of 86.69m.
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-2" data-bs-slide="prev">
+                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                             <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-2" data-bs-slide="next">
+                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                             <span class="visually-hidden">Next</span>
+                                        </button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header" id="heading">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                   <b>India Tech (latest in technology)</b>
+                              </button>
+                         </h2>
+                         <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                              data-bs-parent="#accordionId">
+                              <div class="accordion-body">
+                                   <div id="carouselExampleControls-3" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                             <div class="carousel-item active">
+                                                  <a href="https://www.shethepeople.tv/news/who-is-kyra-indias-virtual-influencer/" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/BeFunky-collage_-_2022-06-11T1_1.jpg?uVNwTy42sXeYrrDOcOK_BBIhu1GbG2nl&size=770:433" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Who Is Kyra? India's First Virtual Influencer With More Than 95,000 Followers</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Ritika Joshi</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>4/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 21-year-old Kyra is India's first venture into the virtual influencer space. Kyra is the creation of Himanshu Goel, business head at Top Social …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://techcrunch.com/2022/06/04/google-disables-rcs-ads-in-india-following-rampant-spam-by-businesses/" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://techcrunch.com/wp-content/uploads/2022/01/GettyImages-1237204056.jpg?w=1390&crop=1" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Google disables RCS ads in India following rampant spam by businesses</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Manish Singh</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>4/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Google has halted businesses from using RCS for promotion in India, the company's biggest market by users, following
+                                                                 reports of rampant spam by some firms in a setback for the standard that the company is hoping to help become the future
+                                                                 of SMS messaging. Rich Communication Services, or RCS, is the …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.entrepreneur.com/article/428610" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://assets.entrepreneur.com/content/3x2/2000/1654061984-Myproject309.jpg?auto=webp&quality=95&crop=16:9&width=675" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Emerging Technology And Fintech Success Story: How Rural India Is the Key</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Amit Nigam</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>4/6/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 The rural-urban economic divide is one of the most fundamental elements that shape overall economic disparity. The
+                                                                 extent to which digital financial products and services have reached the two very distant sectors of society varies in
+                                                                 several ways. Apart from the lack of infrastructure, the low …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://economictimes.indiatimes.com/tech/technology/tesla-will-not-manufacture-in-india-unless-it-is-allowed-to-sell-service-cars-elon-musk/articleshow/91841633.cms" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://img.etimg.com/thumb/msid-90150323,width-650,imgsize-47522,,resizemode-4,quality-100/elon-musk-grimes-ap.jpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Tesla won't make in India if service, sale not allowed, says Elon Musk</b></h4>
+                                                            </div>Indian Tech
+                                                            <div class="spans">
+                                                                 <span>ETtech</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>28/5/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Bengaluru: Electric car maker Tesla Inc will not manufacture in India till it is permitted to sell and service its cars
+                                                                 in the country, founder and …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.hardwarezone.com.sg/tech-news-apple-said-expand-production-india-and-southeast-asia" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://assets.hardwarezone.com/img/2021/09/iphone13-13pro-lineup2_0.jpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Apple said to expand production in India and Southeast Asia</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Cookie Monster</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>23/5/2022</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Apple reportedly told contract manufacturers to expand production beyond China.
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://foreignpolicy.com/2021/10/11/india-tech-china-xi-investment-economy-venture-capital-ipo/" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://foreignpolicy.com/wp-content/uploads/2021/10/india-tech-venture-capital-GettyImages-1183210422-e1633942614485.jpg?w=800&h=533&quality=90" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Global Money Shifts to India as Xi Cracks Down on Tech</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Bhaskar Chakravorti</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>11/10/2021</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 But the sudden flood of capital is not as good for India as it looks. You would think Chinese President Xi Jinping is
+                                                                 dead set on kneecapping his …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.scmp.com/news/asia/east-asia/article/3161765/investors-choose-india-over-china-startups-2021-tech-boom" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/canvas/2022/01/01/c74caa02-d6a8-4f0b-9d8d-52b66ea08c06_262a966b.jpg?itok=12HyAEMI&v=1640974957" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Investors choose India over China for startups in 2021 tech boom</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Agence France-Presse</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>31/12/2021</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Sumit Gupta has had a big year-turning 30, getting married and seeing his startup become one of India’s newest tech
+                                                                 unicorns. Hampered by the …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.pgurus.com/bengaluru-makes-place-amongst-top-five-cities-for-artificial-intelligence/" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://cdn1.expresscomputer.in/wp-content/uploads/2020/02/18095938/Artificial-Intelligence-AI.jpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Bengaluru Makes Place Amongst Top Five Cities for Artificial Intelligence</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>PGurus Newsdesk</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>27/12/2021</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Bengaluru emerges amongst top five cities for Artificial Intelligence The Harvard Business Review (HBR) and a study by
+                                                                 TIDE Framework have listed …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.eurasiareview.com/21122021-japanese-aversion-to-digitization-derailed-investment-in-india-analysis/" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://i0.wp.com/www.eurasiareview.com/wp-content/uploads/2020/09/b-133.jpg?w=800&ssl=1" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>Japanese Aversion To Digitization Derailed Investment In India – Analysis</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Subrata Majumder</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>21/12/2021</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Japan has been pioneer in boosting automobalization in India, which has now become one of the important pillars for
+                                                                 modern Indian economy. Hitherto …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                             <div class="carousel-item">
+                                                  <a href="https://www.analyticsinsight.net/the-scope-of-artificial-intelligence-in-india/" target="_blank">
+                                                       <div class="card-image">
+                                                            <img src="https://www.analyticsinsight.net/wp-content/uploads/2021/10/The-Scope-of-Artificial-intelligence-in-India-1440x564_c.jpg" />
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <div class="card-heading">
+                                                                 <h4><b>The Scope of Artificial intelligence in India</b></h4>
+                                                            </div>
+                                                            <div class="spans">
+                                                                 <span>Apoorva Bellapu</span>
+                                                                 <span>&#10054;</span>
+                                                                 <span>2/10/2021</span>
+                                                            </div>
+                                                            <div class="card-description mt-3">
+                                                                 Artificial intelligence has gained immense importance over the years, so much so that it is has found its presence felt
+                                                                 in almost all the sectors …
+                                                            </div>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-3" data-bs-slide="prev">
+                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                             <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-3" data-bs-slide="next">
+                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                             <span class="visually-hidden">Next</span>
+                                        </button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <br>
+<!----------Footer section---------->
+     <footer class="d-flex align-items-center justify-content-center mt-2 py-2">
+          <div>Anmol Punj © XBoard 2022</div>
+     </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+        <script type="module">
+          import { accordionItem, fetchNews } from './resources/js/index.js';
+
+          const accordion = document.getElementById('topics');
+
+          (async function () {
+               const news = await fetchNews();
+
+               for (let i = 0; i < news.length; i++)
+                    accordion.appendChild(accordionItem(news[i], i === 0, i));
+          })();
+
+     </script>
+     </body>
+</html>
